@@ -19,6 +19,8 @@ def onefile(i, baseurl, enc = "utf-8"):
   doc = html.fromstring(fulltext) 
   doc.make_links_absolute(baseurl)
   alllist = doc.find_class("pContent")  # list of posts
+  # next remove all those recycled (not shown) posts
+  alllist = [ele for ele in alllist if len(ele.xpath('div/div/a')) > 0]
   f.close()
   return alllist
 
@@ -54,7 +56,7 @@ def sortByDate(allposts):
 
 if __name__ == '__main__':
   
-  maxpage = 243
+  maxpage = 243 
   authorToPick = "Emyn"
   
   baseurl = "http://www.ccthere.com"
