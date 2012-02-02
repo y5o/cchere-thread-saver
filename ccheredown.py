@@ -23,4 +23,4 @@ for i in range(1, maxpage+1):
   f.close()
   time.sleep(3)
  
- driver.quit()
+driver.quit()
