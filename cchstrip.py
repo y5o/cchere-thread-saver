@@ -1,4 +1,6 @@
 #!/usr/bin/python
+# -*- coding:utf-8 -*-
+
 import codecs
 import datetime
 from lxml import html
@@ -57,7 +59,7 @@ def sortByDate(allposts):
 if __name__ == '__main__':
   
   maxpage = 243 
-  authorToPick = "Emyn"
+  authorToPick = u"Emyn"
   
   baseurl = "http://www.ccthere.com"
   postlist = []
