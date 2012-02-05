@@ -1,4 +1,4 @@
-#labels Featured,mechanize
+#labels Featured,mechanize,selenium,Phase-Implementation
 介绍
 
 被西西河第一高楼弄得神魂颠倒，刚好有人要求脱水版，所以花了一天时间写了这个。我不精通python，写的东西可能不怎么好看，但是目前看来还可以用，继续改进中。
