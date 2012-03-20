@@ -1,7 +1,7 @@
 #labels Featured,mechanize,selenium,Phase-Implementation
 介绍
 
-被西西河第一高楼弄得神魂颠倒，刚好有人要求脱水版，所以花了一天时间写了这个。我不精通python，写的东西可能不怎么好看，但是目前看来还可以用，继续改进中。
+被西西河第一高楼弄得神魂颠倒，刚好有人要求脱水版，所以写了这个。我不特别精通python，写的东西可能不怎么好看，但是目前看来还可以用，继续改进中。
 
 欢迎诸位河牛提意见建议或者指导或者帮助我改进。
 
@@ -14,3 +14,12 @@
 另外写了一个用来提取某个thread里面所有email地址并且输出的脚本getemails
 
 下一步是弄一个flexible的gui，让没有任何兴趣改code的使用者能自己下载自己需要的文章。
+
+Implementation Notes:
+The original version used selenium to retrieve the dynamic webpages, and lxml to parse the webpage and regular expression to extract date/time to sort.
+
+The current version implemented the javascript function to decode the page source, and thus no longer needs selenium.
+
+A separate script to extract all the email addresses in one thread is also added.
+
+Next step is to add a platform-independent GUI with more functionalities, such as retrieve all the posts in the whole website from the same author.
